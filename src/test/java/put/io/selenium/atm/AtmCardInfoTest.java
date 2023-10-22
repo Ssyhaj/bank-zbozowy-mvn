@@ -29,14 +29,14 @@ public class AtmCardInfoTest {
 	@Test
 	public void testTryPinCorrect() {
 		fixture.cardIn();
-		fixture.tryPin("1525");
+		fixture.tryPin("1525"); /* poprawny test pinu, po modyfikacji pliku AtmCardInfo.java obydwa sa niepoprawne */
 		assertTrue(fixture.pinWasOk);
 	}
 	
 	@Test
 	public void testTryPinIncorrect() {
 		fixture.cardIn();
-		fixture.tryPin("1524");
+		fixture.tryPin("1524"); /* niepoprawny test pinu */
 		assertFalse(fixture.pinWasOk);
 		assertEquals(2, fixture.pinTriesLeft);
 	}
