@@ -8,7 +8,7 @@ package put.io.selenium.atm;
  */
 public class AtmCardInfo {
 
-	final int RIGHT_PIN = 1893;
+	final int RIGHT_PIN = 1525; /* test nie przechodzi bo inny plik ma wpisana poprawna wartosc ktora testuje dzialanie tego, kiedy ta wartosc zostaje zmieniona, ta druga pozostaje taka sama, skutkujac bledem */
 	
 	boolean isCardIn = false;
 	
